@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/*------------------------------------------ aplicando parametros en general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+img {
+  max-width: 95%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------ aplicando estile al encabezado */
+
+.header {
+  background-image: linear-gradient(rgba(119, 118, 118, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../IMAGE/zapato-deportivo-cuero-negro-elegante-cordon-generado-ia.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  margin-left: 15px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #fffdfc;
+  display: block;
+  font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 75px;
+  line-height: 80px;
+  color: #f9fafc;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: #c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 15px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 11px 25px;
+  background-color: #3448C5;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* ----------------------------------------------------- aplicando estilos de las ofertas */
+.ofert {
+  padding: 15px 0 0 0;
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin-left: 60px;
+}
+
+.ofert h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.ofert-1 {
+  display: inline-flex;
+  border-radius: 5px;
+  align-items: center;
+  flex-basis: calc(33.3% - 15px);
+  padding: 5px;
+}
+
+.ofert.img {
+  flex-basis: 50%;
+  margin-right: 15px;
+}
+
+.ofert-img img {
+  width: 195px;
+  border-radius: 25px;
+}
+
+.ofert-txt {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.ofert-txt h3 {
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: #3448C5;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* ----------------------------------------------------------- aplicando estilos del carrusel */
+.carousel {
+  width: 100%;
+  margin: 0px 0px;
+  margin-bottom: 20px;
+}
+
+h4,
+h2,
+small,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel h2 {
+  font-size: 45px;
+  line-height: 38px;
+  padding-bottom: 50px;
+  opacity: .9;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  color: #111111;
+}
+
+.carrusel-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.carrusel-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease-in-out;
+}
+
+.carrusel {
+  position: relative;
+  width: 210px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+
+.carrusel h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.carrusel h4 small {
+  font-size: 15px;
+  display: block;
+}
+
+.carrusel a img {
+  object-fit: cover;
+  height: 300px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: .3s ease-in-out;
+}
+
+.carrusel-arrow {
+  border-radius: 30px;
+  background-color: #00000075;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.carrusel-arrow:focus {
+  outline: 0;
+}
+
+.carrusel-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.carrusel-prev {
+  left: 0px;
+}
+
+.carrusel-next {
+  right: 0px;
+}
+
+/* -------------------------------------------------------- aplicando estilos de QUALITY PRODUCTS */
+.products {
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.products h2 {
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  padding-top: 0px;
+}
+
+.products-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+
+.products img {
+  width: 260px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.products h3 {
+  font-size: 20px;
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.products p .precio {
+  font-size: 16px;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+.precio {
+  font-weight: 800;
+}
+
+/* ------------------------------------------------------------ aplicando estilos de la informacion del cuidado de los zapatos */
+.icons {
+  padding: 50px 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-1 {
+  flex-basis: calc(33.3% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #f5f5f5;
+}
+
+.icon-txt h3 {
+  font-size: 20px;
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.icon-txt p {
+  font-size: 16px;
+  color: #111111;
+}
+
+/* ------------------------------------------------------ aplicando estilos de los blogs de informacion extras */
+.blog {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.blog-1 {
+  flex-basis: calc(33.3% - 30px);
+}
+
+.blog-1 img {
+  margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+  font-size: 20px;
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.blog-1 p {
+  font-size: 16px;
+  color: #111111;
+}
+
+/* ------------------------------------------------------- aplicando estilos al pie de pagina */
+.footer {
+  padding: 50px 0;
+  background-color: #111111;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link h3 {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.link a {
+  font-size: 16px;
+  color: #dcdcdc;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ============================================================== aplicando responsive a la pagina */
+@media (max-width:768px) {
+
+  .logo img{
+    width: 75px;
+    height: 75px;
+  }
+
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked~.navbar {
+    display: initial;
+  }
+
+  .menu .img-logo img {
+    width: 75px;
+    height: 75px;
+    margin-left: 15px;
+  }
+
+  .header {
+    min-height: 0vh;
+  }
+
+  .header-content {
+    padding: 100px 30px;
+  }
+
+  .header-content p {
+    padding: 0;
+  }
+
+  .carousel {
+    margin: 0px 0px;
+  }
+
+  .carrusel {
+    width: 275px;
+  }
+
+  .carrusel a img {
+    width: 250px;
+  }
+
+  .ofert {
+    padding: 30px 30px 0 30px;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .ofert-1 {
+    margin-bottom: 30px;
+  }
+
+  .products {
+    padding: 0 30px 30px 30px;
+  }
+
+  .products h2 {
+    margin-bottom: 30px;
+  }
+
+  .products-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .products img {
+    width: 200px;
+    height: 235px;
+    border-radius: 5;
+  }
+
+  .icons {
+    padding: 20px;
+    display: block;
+    text-align: center
+  }
+
+  ;
+
+  .icons .container {
+    flex-direction: column;
+    text-align: center;
+    background-color: #3448C5;
+  }
+
+  .icon-1 {
+    margin-bottom: 30px;
+  }
+
+  .blog {
+    padding: 0 30px 30px 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-1 {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}

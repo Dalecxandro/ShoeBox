@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ShoeBox- shopping</title>
+	<link rel="stylesheet" href="Mostrador.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="../Inicio/shoeBox.html" class="logo"><img src="../IMAGE/LOGO-removebg.png" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../IMAGE/menu.png" alt="Icono-menu" class="menu-icono">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../Inicio/shoeBox.html">Home</a></li>
+                    <li><a href="../Zapato hombre/Men.html">Men</a></li>
+                    <li><a href="../Zapato mujer/WoMen.html">Women</a></li>
+                    <li><a href="../Zapato niño/Kids.html">Kids</a></li>
+                    <li><a href="../Developers/Developers.html">Developers</a></li>
+                    <li><a href="../Login/SingUp.html">login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<main>
+		<div class="container-img">
+			<h2>Throwing fly jordan</h2>
+			<img src="https://golty.com.co/wp-content/uploads/2023/04/tenis-deportivos-run-negro1.jpg" alt=""
+				class="img" />
+		</div>
+		<div class="container-info-product">
+			<div class="container-price">
+				<span>$129.900</span>
+				<i class="fa-solid fa-angle-right"></i>
+			</div>
+
+			<div class="container-details-product">
+				<div class="form-group">
+					<label for="colour">Color</label>
+					<select name="colour" id="colour">
+						<option disabled selected value="">
+							Select a option
+						</option>
+						<option value="rojo">Red</option>
+						<option value="blanco">White</option>
+						<option value="beige">Black</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="size">Size</label>
+					<select name="size" id="size">
+						<option disabled selected value="">
+							Select a option
+						</option>
+						<option value="40">7,5</option>
+						<option value="42">8</option>
+						<option value="43">8,5</option>
+						<option value="44">9</option>
+						<option value="44">9,5</option>
+					</select>
+				</div>
+				<button class="btn-clean">Clear</button>
+			</div>
+
+			<div class="container-add-cart">
+				<div class="container-quantity">
+					<input type="number" placeholder="1" value="1" min="1" class="input-quantity" />
+					<div class="btn-increment-decrement">
+						<i class="fa-solid fa-chevron-up" id="increment"></i>
+						<i class="fa-solid fa-chevron-down" id="decrement"></i>
+					</div>
+				</div>
+				<button class="btn-add-to-cart">
+					<i class="fa-solid fa-plus"></i>
+					Add to bag
+				</button>
+			</div>
+
+			<div class="container-description">
+				<div class="title-description">
+					<h4>Description</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+				<div class="text-description">
+					<p>
+						A shoe designed for running and I don't know why anymore
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Laboriosam iure provident atque voluptatibus
+						reiciendis quae rerum, maxime placeat enim cupiditate
+						voluptatum, temporibus quis iusto.
+					</p>
+				</div>
+			</div>
+
+			<div class="container-additional-information">
+				<div class="title-additional-information">
+					<h4>More info</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+				<div class="text-additional-information hidden">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit.</p>
+				</div>
+			</div>
+
+			<div class="container-reviews">
+				<div class="title-reviews">
+					<h4>Reviews</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+				<div class="text-reviews hidden">
+					<p>Nice B)</p>
+				</div>
+			</div>
+
+			<div class="container-social">
+				<span>Share</span>
+				<div class="container-buttons-social">
+					<a href="#"><i class="fa-solid fa-envelope"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="container-related-products">
+		<h2>Related Products</h2>
+		<div class="card-list-products">
+			<div class="card">
+				<div class="card-img">
+					<img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/c321d92d-77de-4d69-900f-b858d290703d.3bee43d8fec2b0112056a8c525ab37d0.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"
+						alt="producto-1" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>Rayo Macqueen</h3>
+						<p class="category">Ultra fast and mega fast</p>
+					</div>
+					<div class="price">$1.527.000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="https://calzatodocol.vteximg.com.br/arquivos/ids/197534-1000-1000/112100072_azul_01.jpg?v=638104226374300000"
+						alt="producto-2" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>Common Projects Achilles</h3>
+						<p class="category">Footwear, Sneakers</p>
+					</div>
+					<div class="price">$259.900</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="https://calzatodocol.vteximg.com.br/arquivos/ids/182063-1000-1000/119000158_blanco_01.jpg?v=637626729954300000"
+						alt="producto-3" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>Adidas - Boston Super OG</h3>
+						<p class="category">Footwear, Sneakers</p>
+					</div>
+					<div class="price">$109.900</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="https://calzatodocol.vteximg.com.br/arquivos/ids/189899-1000-1000/112100044_azul_01.jpg?v=637865048192430000"
+						alt="producto-4" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>Common Projects Achilles</h3>
+						<p class="category">Footwear, Sneakers</p>
+					</div>
+					<div class="price">$249.900</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Social networks</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="https://web.whatsapp.com/">Tel:+57 320635473</a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox">Mail: shoeBox@gmail.com</a></li>
+                    <li><a href="https://maps.app.goo.gl/5LWDgtV7Ay3VUEZU9">campus: calle 69-55 las torres</a></li>
+                    <li><a href="../Mostrador/Mostrador.html">orders to the whole country</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="../Inicio/shoeBox.html">Home</a></li>
+                    <li><a href="../Zapato hombre/Men.html">Men</a></li>
+                    <li><a href="../Zapato mujer/WoMen.html">Women</a></li>
+                    <li><a href="../Zapato niño/Kids.html">Kids</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+	<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+	<script src="Mostrador.js"></script>
+</body>
+
+</html>
